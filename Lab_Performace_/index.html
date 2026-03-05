@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cotact Us Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="card">
+        <h1>Contact us</h1>
+        <form>
+            <table>
+                <tr class="two-col">
+                    <td>
+                        <label for="firstname">First Name</label>
+                        <br>
+                        <input type="text" id="firstname" name="firstname">
+                    </td>
+                    <td>
+                        <label for="lastname">Last Name</label>
+                        <br>
+                        <input type="text" id="lastname" name="lastname">
+                    </td>
+                </tr>
+
+                <tr class="two-col">
+                    <td>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="text" id="email" name="email">
+                    </td>
+                    <td>
+                        <label for="phone">Phone Number</label>
+                        <br>
+                        <input type="text" id="phone" name="phone">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="question">What Do You Have In Mind?</label>
+                        <br>
+                        <textarea id="question" name="question" placeholder="Please enter your query..." rows="7" cols="40"></textarea>
+
+                    </td>
+                </tr>
+
+                <tr class="submit-row">
+                    <td colspan="2" align="center">
+                        <input type="submit" id="submit" name="submit" value="submit">
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+        
+    </div>
 </body>
 </html>
