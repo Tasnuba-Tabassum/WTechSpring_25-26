@@ -1,60 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotact Us Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="card">
-        <h1>Contact us</h1>
-        <form>
-            <table>
-                <tr class="two-col">
-                    <td>
-                        <label for="firstname">First Name</label>
-                        <br>
-                        <input type="text" id="firstname" name="firstname">
-                    </td>
-                    <td>
-                        <label for="lastname">Last Name</label>
-                        <br>
-                        <input type="text" id="lastname" name="lastname">
-                    </td>
-                </tr>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="contact-container">
+      <h1>Contact us</h1>
 
-                <tr class="two-col">
-                    <td>
-                        <label for="email">Email</label>
-                        <br>
-                        <input type="text" id="email" name="email">
-                    </td>
-                    <td>
-                        <label for="phone">Phone Number</label>
-                        <br>
-                        <input type="text" id="phone" name="phone">
-                    </td>
-                </tr>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <label>FIRST NAME</label>
+              <input type="text" />
+            </td>
 
-                <tr>
-                    <td>
-                        <label for="question">What Do You Have In Mind?</label>
-                        <br>
-                        <textarea id="question" name="question" placeholder="Please enter your query..." rows="7" cols="40"></textarea>
+            <td>
+              <label>LAST NAME</label>
+              <input type="text" />
+            </td>
+          </tr>
 
-                    </td>
-                </tr>
+          <tr>
+            <td>
+              <label>EMAIL</label>
+              <input type="email" />
+            </td>
 
-                <tr class="submit-row">
-                    <td colspan="2" align="center">
-                        <input type="submit" id="submit" name="submit" value="submit">
-                    </td>
+            <td>
+              <label>PHONE NUMBER</label>
+              <input type="text" />
+            </td>
+          </tr>
 
-                </tr>
-            </table>
-        </form>
-        
+          <tr>
+            <td colspan="2">
+              <label>WHAT DO YOU HAVE IN MIND</label>
+              <textarea placeholder="Please enter query..."></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" class="submit-row">
+              <button type="submit">Submit</button>
+              <button type="button" onclick="window.location.reload()">
+                Cancel
+              </button>
+              <button
+                type="button"
+                onclick="window.location.href = 'index.html'"
+              >
+                Back to Home
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
     </div>
-</body>
+  </body>
 </html>
