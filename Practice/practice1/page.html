@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <form id="myForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname">
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        <br>
+        <button onclick="return validation();" type="submit" id="submit" name="submit" value="Submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
