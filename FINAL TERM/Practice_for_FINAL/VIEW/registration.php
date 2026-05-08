@@ -8,7 +8,7 @@ include "../CONTROLLER/registrationvalidation.php";
         <title> Registration Form </title>
     </head>
     <body>
-        <form action="" method="post">
+        <form action="../CONTROLLER/loginvalidation.php" method="post">
             <table>
                 <tr>
                     <td> <p style = 'color: red'> *REQUIRED FIELD </p> </td><br>
