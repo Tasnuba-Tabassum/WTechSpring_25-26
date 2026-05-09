@@ -5,7 +5,7 @@ include "../controller/registrationvalidation.php";
 <!DOCTYPE html>
 <html>
     <body>
-        <form>
+        <form method="POST" action="../controller/registrationvalidation.php">
             <table>
                 <tr>
                     <td><label for="name">Name: </label></td>

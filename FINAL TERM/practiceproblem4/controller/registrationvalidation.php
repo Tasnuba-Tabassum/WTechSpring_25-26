@@ -48,28 +48,29 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
                     }
                     $data = file_get_contents($datafile);
                     $mydata = json_decode($data);
-                
+
+                    $database = new db();
+                    $connection = $database->connection();
+                    $result = $database->registration($connection,"students",$name, $email, $age, $department);
+                    if($result)
+                        {
+                            echo "Registration Successful.";
+                        }
+                        else
+                        {
+                            echo "Error saving data.";
+                        }
+                        if(isset($_SESSION["name"]))
+                            {
+                                echo "Welcome, " . $_SESSION["name"] . "!";
+                            }
+                            else
+                            {
+                                echo "Session not set.";
+                            }
+
             }
-            $database = new db();
-            $connection = $database->connection();
-            $result = $database->registration($connection,"students",$name, $email, $age, $department);
-            if($result)
-                {
-                    echo "Registration Successful.";
-                }
-                else
-                {
-                    echo "Error saving data.";
-                }
-                if(isset($_SESSION["name"]))
-                    {
-                        echo "Welcome, " . $_SESSION["name"] . "!";
-                    }
-                    else
-                    {
-                        echo "Session not set.";
-                    }
-                
+
             }
     
 
