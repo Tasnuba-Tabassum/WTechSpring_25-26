@@ -18,10 +18,10 @@ class db{
 
     function registration($connection, $students, $name, $email, $age, $department)
     {
-        $stmt = $connection->prepare("INSERT INTO $students (name, email, age, department) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssis", $name, $email, $age, $department);
-        $result = $stmt->execute();
-        $stmt->close();
+        $sql = $connection->prepare("INSERT INTO $students (name, email, age, department) VALUES (?, ?, ?, ?)");
+        $sql->bind_param("ssis", $name, $email, $age, $department);
+        $result = $sql->execute();
+        $sql->close();
         return $result;
     }
 
